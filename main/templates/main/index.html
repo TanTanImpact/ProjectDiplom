@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/footer_style.css" %}">
+{% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}
+
+{% block content %}
+    <h2>{{ content }}</h2>
+{% endblock %}
+
+{% block footer %}
+<footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Soap Fantasy Store</h1>
+          
+      <h2>Контакты</h2>
+      
+      <address>
+        г.Минск Пр-кт Партизанский д.107  <br>
+        +375 (29) 574-04-17 <br>
+        <a class="footer__btn" href="mailto:ezdakovmu@ya.ru"> Напиши нам! </a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Социальные сети</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="https://www.instagram.com/tatiana_ezdakova?igsh=MTU2ZzkwNXNxdTEzYQ==">Instagramm</a>
+          </li>
+  
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+              
+          <li>
+            <a href="https://x.com/EzdakovaA">X</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title"> Наши партнеры </h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#"> БАСФ ИООО </a>
+          </li>
+          
+          <li>
+            <a href="#">ХСХ ХИМИ ООО </a>
+          </li>
+          
+          <li>
+            <a href="#">ИНКРАСЛАВ УП </a>
+          </li>
+          
+          <li>
+            <a href="#">БАРХИМ ОАО </a>
+          </li>
+          
+          <li>
+            <a href="#">МАРТА ООО</a>
+          </li>
+          
+          <li>
+            <a href="#">РОМАКС ООО </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title">Правила</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Политика конф-сти</a>
+          </li>
+          
+          <li>
+            <a href="#">Условия пользования </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy;  2024 Ezdakova Tatsiana. All rights reserved.</p>
+      <div class="legal__links">
+        <span>Made with <span class="heart">♥</span> from Belarus</span>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
+
+
